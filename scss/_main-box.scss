@@ -1,0 +1,49 @@
+
+/* Gradient Animation */
+.hue {
+  background-color: hsl(213, 100%, 20%); /*red*/
+  // background: -webkit-linear-gradient(45deg,  rgba(61,133,168,1) 0%,rgba(255,76,54,1) 100%);
+  animation: hue 20s infinite alternate;
+  -webkit-animation: hue 20s infinite alternate;
+  -webkit-animation: hue 20s infinite alternate;
+}
+@keyframes hue {
+  /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+  20% {background-color: hsl(100, 100%, 20%);}
+  40% {background-color: hsl(144, 100%, 20%);}
+  60% {background-color: hsl(190, 100%, 20%);}
+  80% {background-color: hsl(260, 100%, 20%);}
+  100% {background-color: hsl(310, 100%, 20%);}
+}
+
+@-webkit-keyframes hue {
+  /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+  20% {background-color: hsl(100, 100%, 20%);}
+  40% {background-color: hsl(144, 100%, 20%);}
+  60% {background-color: hsl(190, 100%, 20%);}
+  80% {background-color: hsl(260, 100%, 20%);}
+  100% {background-color: hsl(310, 100%, 20%);}
+}
+@-moz-keyframes hue {
+  /*hue will animate from 0 to 360. Saturation and Lightness remain constant*/
+  20% {background-color: hsl(100, 100%, 20%);}
+  40% {background-color: hsl(144, 100%, 20%);}
+  60% {background-color: hsl(190, 100%, 20%);}
+  80% {background-color: hsl(260, 100%, 20%);}
+  100% {background-color: hsl(310, 100%, 20%);}
+}
+.box-pad {
+    padding: 20% 5%;
+    .intro {
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+            color: #d8d8d8;
+        }
+        p {
+            font-size: 15px !important;
+            color: #fff;
+            line-height: 29px !important;
+        }
+    }
+}
