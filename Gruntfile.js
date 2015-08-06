@@ -34,7 +34,8 @@ module.exports = function(grunt) {
 
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
-
+  grunt.loadNpmTasks('grunt-font-awesome-vars');
+  
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
 }

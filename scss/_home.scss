@@ -1,0 +1,99 @@
+html,
+body {
+    height: 100%;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 100%;
+}
+
+body {
+    background: #333332;
+    color: #666;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.5;
+    position: relative;
+    cursor: auto;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+.body-container {
+    background: url(../img/ac.png) center center no-repeat;
+    min-height: calc(100vh);
+    background-size: cover;
+    &__top-bar {
+        padding-top: 40px;
+        b {
+            font-size: rem-calc(28px);
+            color: #fff;
+            .nick {
+                color: $nav-green;
+            }
+        }
+        nav {
+            a {
+                font-size: rem-calc(16px);
+                color: #fff;
+                margin-right: 50px;
+                position: relative;
+                &:last {
+                    margin-right: 0;
+                }
+                &:hover:before,
+                .navmenu &.active:before {
+                    left: -10px;
+                    right: -10px;
+                    background-color: $nav-green;
+                }
+                &:before {
+                    position: absolute;
+                    left: 50%;
+                    right: 50%;
+                    bottom: -15px;
+                    height: 3px;
+                    content: '';
+                    background-color: transparent;
+                    z-index: 1;
+                    transition: all 300ms;
+                    -webkit-transition: all 300ms;
+                }
+            }
+        }
+    }
+    &__bio {
+        p {
+            font-size: rem-calc(40px);
+            color: #fff;
+            margin-top: 19%;
+            line-height: 40px;
+        }
+        &--desig {
+            font-size: rem-calc(24px);
+        }
+    }
+}

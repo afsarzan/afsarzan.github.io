@@ -1,55 +1,47 @@
 @import "settings";
-@import "header";
-@import "main-box";
-@import "foundation";
-@import "../bower_components/open-sans-fontface/sass/variables";
-@import "../bower_components/open-sans-fontface/sass/mixins";
-@import "../bower_components/open-sans-fontface/sass/Light";
-@import "../bower_components/open-sans-fontface/sass/LightItalic";
-@import "../bower_components/open-sans-fontface/sass/Regular";
-@import "../bower_components/open-sans-fontface/sass/Italic";
-@import "../bower_components/open-sans-fontface/sass/Semibold";
-@import "../bower_components/open-sans-fontface/sass/SemiboldItalic";
-@import "../bower_components/open-sans-fontface/sass/Bold";
-@import "../bower_components/open-sans-fontface/sass/BoldItalic";
-@import "../bower_components/open-sans-fontface/sass/ExtraBold";
-@import "../bower_components/open-sans-fontface/sass/ExtraBoldItalic";
 
+//@import "foundation";
 
 // Or selectively include components
  @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
-   "foundation/components/block-grid",
+  "foundation/components/block-grid",
 //   "foundation/components/breadcrumbs",
 //   "foundation/components/button-groups",
   "foundation/components/buttons",
-//   "foundation/components/clearing",
+  "foundation/components/clearing",
 //   "foundation/components/dropdown",
 //   "foundation/components/dropdown-buttons",
 //   "foundation/components/flex-video",
-   "foundation/components/forms",
-  "foundation/components/grid",
-   "foundation/components/inline-lists",
+    "foundation/components/forms",
+   "foundation/components/grid",
+  "foundation/components/inline-lists",
 //   "foundation/components/joyride",
 //   "foundation/components/keystrokes",
   "foundation/components/labels",
 //   "foundation/components/magellan",
 //   "foundation/components/orbit",
 //   "foundation/components/pagination",
-//   "foundation/components/panels",
+   "foundation/components/panels",
 //   "foundation/components/pricing-tables",
 //   "foundation/components/progress-bars",
 //   "foundation/components/reveal",
-  "foundation/components/side-nav",
+//   "foundation/components/side-nav",
 //   "foundation/components/split-buttons",
-  "foundation/components/sub-nav",
+//   "foundation/components/sub-nav",
 //   "foundation/components/switches",
 //   "foundation/components/tables",
-  "foundation/components/tabs",
+//   "foundation/components/tabs",
 //   "foundation/components/thumbs",
-//   "foundation/components/tooltips",
-//   "foundation/components/top-bar",
-//   "foundation/components/type",
-//   "foundation/components/offcanvas",
-   "foundation/components/visibility";
+  "foundation/components/tooltips",
+  "foundation/components/top-bar",
+    "foundation/components/type",
+   "foundation/components/offcanvas",
+  "foundation/components/visibility"
+;
+
+@import "home";
+@import url("http://fonts.googleapis.com/css?family=Montserrat");
+$fa-font-path: "../bower_components/fontawesome/fonts/";
+@import "../bower_components/fontawesome/scss/font-awesome";
