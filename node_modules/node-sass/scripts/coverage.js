@@ -1,11 +1,6 @@
-/*!
- * node-sass: scripts/coverage.js
- */
-
-require('../lib/extensions');
-
-var bin = require('path').join.bind(null, __dirname, '..', 'node_modules', '.bin'),
-    spawn = require('child_process').spawn;
+var path = require('path'),
+    spawn = require('child_process').spawn,
+    bin = path.join.bind(null, __dirname, '..', 'node_modules', '.bin');
 
 /**
  * Run test suite
@@ -17,9 +12,7 @@ function suite() {
   process.env.NODESASS_COV = 1;
 
   var coveralls = spawn(bin('coveralls'));
-
-  var args = [bin('_mocha')].concat(['--reporter', 'mocha-lcov-reporter']);
-  var mocha = spawn(process.sass.runtime.execPath, args, {
+  var mocha = spawn(bin('_mocha'), ['--reporter', 'mocha-lcov-reporter'], {
     env: process.env
   });
 

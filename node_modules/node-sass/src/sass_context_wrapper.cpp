@@ -23,10 +23,15 @@ extern "C" {
   }
 
   sass_context_wrapper* sass_make_context_wrapper() {
-    return (sass_context_wrapper*)calloc(1, sizeof(sass_context_wrapper));
+    sass_context_wrapper* ctx_w = (sass_context_wrapper*)calloc(1, sizeof(sass_context_wrapper));
+
+    ctx_w->importer_mutex = new std::mutex();
+    ctx_w->importer_condition_variable = new std::condition_variable();
+
+    return ctx_w;
   }
 
-  void sass_free_context_wrapper(sass_context_wrapper* ctx_w) {
+  void sass_wrapper_dispose(struct sass_context_wrapper* ctx_w, char* string = 0) {
     if (ctx_w->dctx) {
       sass_delete_data_context(ctx_w->dctx);
     }
@@ -34,20 +39,24 @@ extern "C" {
       sass_delete_file_context(ctx_w->fctx);
     }
 
+    delete ctx_w->file;
+    delete ctx_w->prev;
     delete ctx_w->error_callback;
     delete ctx_w->success_callback;
+    delete ctx_w->importer_callback;
+
+    delete ctx_w->importer_mutex;
+    delete ctx_w->importer_condition_variable;
 
     NanDisposePersistent(ctx_w->result);
 
-    free(ctx_w->include_path);
-    free(ctx_w->linefeed);
-    free(ctx_w->out_file);
-    free(ctx_w->source_map);
-    free(ctx_w->source_map_root);
-    free(ctx_w->indent);
+    if(string) {
+      free(string);
+    }
+  }
 
-    ctx_w->importer_bridges.resize(0);
-    ctx_w->function_bridges.resize(0);
+  void sass_free_context_wrapper(sass_context_wrapper* ctx_w) {
+    sass_wrapper_dispose(ctx_w);
 
     free(ctx_w);
   }

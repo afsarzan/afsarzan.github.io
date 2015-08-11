@@ -43,7 +43,7 @@ img {
 }
 
 .body-container {
-    background: url(../img/ac.png) center center no-repeat;
+    background: url(../img/ac.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
     min-height: calc(100vh);
     background-size: cover;
     &__top-bar {
@@ -85,15 +85,62 @@ img {
             }
         }
     }
+            &__services {
+                margin-bottom:80px; 
+             &--list  {
+                i{
+                   text-align: center;
+                 width: 100%;
+                  color: #fff;
+                   padding: 24px 0 10px 0;
+                 &:before {
+                     border: 1px solid #fefefe;
+                     padding: 5px;
+                     border-radius: 5px;
+                     text-align: center;
+                 }  
+                }
+                
+                 h4{
+                        margin: 10px 0;
+                        color: #fff;
+                        font-size: 16px;
+                        margin-bottom: 70px;
+
+                 }
+                 &:hover {
+                            background: none repeat scroll 0 0 #2dbf6b;
+                            transition: .9s;
+                        }
+             }
+         }
+
     &__bio {
+        &--desig{
+            height: calc(100vh - 338px);
+        }
+            height: calc(100vh - 338px);
+            position: relative;
         p {
             font-size: rem-calc(40px);
             color: #fff;
-            margin-top: 19%;
-            line-height: 40px;
+            position:absolute;
+            top:48%;
         }
         &--desig {
             font-size: rem-calc(24px);
         }
     }
+    .about-me {
+     background: #fff;
+     padding-top: 70px;
+    h3 {
+        font-weight: lighter;
+        font-size: 25px;
+    }
+}
+
+}
+.text-center {
+    text-align: center;
 }
