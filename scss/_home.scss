@@ -134,9 +134,15 @@ img {
     .about-me {
      background: #fff;
      padding-top: 70px;
+     margin-bottom: 50px;
     h3 {
         font-weight: lighter;
         font-size: 25px;
+    }
+    &____pic{
+        height: 470px;
+        width: 429px;
+        border:0;
     }
 }
 
