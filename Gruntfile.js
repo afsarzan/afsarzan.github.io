@@ -14,6 +14,11 @@ module.exports = function(grunt) {
         files: {
           'css/app.css': 'scss/app.scss'
         }
+      },
+       wiredep: {
+        target: {
+          src: 'index.html' // point to your HTML file.
+        }
       }
     },
 
@@ -38,4 +43,6 @@ module.exports = function(grunt) {
   
   grunt.registerTask('build', ['sass']);
   grunt.registerTask('default', ['build','watch']);
+   grunt.loadNpmTasks('grunt-wiredep');
+
 }

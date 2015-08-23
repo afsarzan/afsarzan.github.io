@@ -10,6 +10,11 @@
     "grunt-contrib-watch": "~0.6.1",
     "grunt-font-awesome-vars": "^1.0.1",
     "grunt-sass": "~0.18.0",
+    "grunt-wiredep": "^2.0.0",
     "node-sass": "~2.0.1"
+  },
+  "dependencies": {
+    "gsap": "^1.17.0",
+    "wiredep": "^3.0.0-beta"
   }
 }
