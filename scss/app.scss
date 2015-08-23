@@ -33,7 +33,7 @@
 //   "foundation/components/switches",
 //   "foundation/components/tables",
 //   "foundation/components/tabs",
-//   "foundation/components/thumbs",
+    "foundation/components/thumbs",
   "foundation/components/tooltips",
   "foundation/components/top-bar",
     "foundation/components/type",
@@ -42,6 +42,7 @@
 ;
 
 @import "home";
+@import "about-me";
 @import url("http://fonts.googleapis.com/css?family=Montserrat");
 $fa-font-path: "../bower_components/fontawesome/fonts/";
 @import "../bower_components/fontawesome/scss/font-awesome";
