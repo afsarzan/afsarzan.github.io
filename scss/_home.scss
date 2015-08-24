@@ -43,16 +43,16 @@ img {
 }
 
 .body-container {
-    background: url(../img/ac.png) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
+    background: url(../img/header-bg1.jpg) no-repeat fixed 0 0 / cover rgba(0, 0, 0, 0);
     min-height: calc(100vh);
     background-size: cover;
     &__top-bar {
         padding-top: 40px;
         b {
             font-size: rem-calc(28px);
-            color: #fff;
+            color:$light-coffee-grey;
             .nick {
-                color: $nav-green;
+                color: $coffee-grey;
             }
         }
         nav {
@@ -68,7 +68,7 @@ img {
                 .navmenu &.active:before {
                     left: -10px;
                     right: -10px;
-                    background-color: $nav-green;
+                    background-color: $coffee-grey;
                 }
                 &:before {
                     position: absolute;
@@ -86,8 +86,10 @@ img {
         }
     }
             &__services {
-                margin-bottom:80px; 
+                // margin-bottom:80px; 
+                background-color: rgba(137, 112, 104, 0.28);
              &--list  {
+                padding-top: 70px;
                 i{
                    text-align: center;
                  width: 100%;
@@ -109,7 +111,7 @@ img {
 
                  }
                  &:hover {
-                            background: none repeat scroll 0 0 #2dbf6b;
+                            background: none repeat scroll 0 0 #4E4444;
                             transition: .9s;
                         }
              }
@@ -123,7 +125,7 @@ img {
             position: relative;
         p {
             font-size: rem-calc(40px);
-            color: #fff;
+            color: $coffee-text;
             position:absolute;
             top:48%;
         }

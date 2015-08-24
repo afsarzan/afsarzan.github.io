@@ -1,7 +1,9 @@
     .about-me {
-        background: url(../img/front-bg.png) repeat 0 0 transparent;
-        padding: 70px 0;
-        margin-bottom: 50px;
+        background: url(../img/front-bg1.png) repeat 0 0 transparent;
+            margin-bottom: 50px;
+            height: calc(100vh);
+                padding-top: 10%;
+            margin: 0 auto;
         &__text {
             h3 {
                 font-weight: lighter;
