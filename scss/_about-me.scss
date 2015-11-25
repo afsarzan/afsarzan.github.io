@@ -2,24 +2,47 @@
         background-color:$trquish;
             margin-bottom: 50px;
             height: calc(100vh);
-                padding-top: 10%;
+                padding-top: 5%;
             margin: 0 auto;
         &__text {
             h3 {
                 font-weight: lighter;
                 font-size: 25px;
                 color: #f8f8f8;
+                border-bottom: 2px solid #3C3A3A;
+                display: inline-block;
             }
             p {
                 line-height: 1.8;
                 font-size: 16px;
                 color: #f8f8f8;
             }
-        }
+
+            ul.zeducation {                      
+                color: rgba(0,0,0,0.77);
+                margin: 0;
+                li.row{
+                    border-top: 1px solid #dedede;
+                    padding-top: 10px;
+                    margin-bottom: 10px;
+                    list-style-type: none;
+                    &:first-child {
+                        border-top: none;
+                    }
+                }
+                span{
+                    color: #3C3A3A;
+                }
+            }
         &__img {
+            position: relative;
             img {
                 height: 450px;
                 width: 450px;
+                position: relative;
+                left: 28%;
+                margin-top: 40%;
             }
         }
     }
+}
