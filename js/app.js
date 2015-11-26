@@ -18,9 +18,40 @@ $(function() {
   });
 });
 
+var selector = '.text-right  a';
 
 $(window).scroll(function(){
-  console.log('scrolloing');
+  onScroll(event,selector);
     if($(window).scrollTop()>=30) $('header').addClass('fixed-top');
     else $('header').removeClass('fixed-top');
   });
+
+
+
+
+$(selector).on('click', function(){
+    $(selector).removeClass('active');    
+    $(this).addClass('active');
+});
+
+
+function onScroll(event,selector){
+    var scrollPos = $(document).scrollTop();
+    $(selector).each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            console.log($(selector));
+            console.log(currLink);
+              $(selector).removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+$('.profes').on('click',function(){
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
+})
