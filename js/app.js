@@ -18,3 +18,9 @@ $(function() {
   });
 });
 
+
+$(window).scroll(function(){
+  console.log('scrolloing');
+    if($(window).scrollTop()>=30) $('header').addClass('fixed-top');
+    else $('header').removeClass('fixed-top');
+  });

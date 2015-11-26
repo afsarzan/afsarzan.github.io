@@ -2,8 +2,11 @@
         background-color:$trquish;
             margin-bottom: 50px;
             height: calc(100vh);
-                padding-top: 5%;
+                padding-top: 4%;
             margin: 0 auto;
+            &__width{
+                    max-width: 65%;
+            }
         &__text {
             h3 {
                 font-weight: lighter;
@@ -16,6 +19,7 @@
                 line-height: 1.8;
                 font-size: 16px;
                 color: #f8f8f8;
+                margin-bottom: 10px;
             }
 
             ul.zeducation {                      
@@ -33,16 +37,12 @@
                 span{
                     color: #3C3A3A;
                 }
-            }
+            }        
+        }
         &__img {
-            position: relative;
+            
             img {
-                height: 450px;
-                width: 450px;
-                position: relative;
-                left: 28%;
-                margin-top: 40%;
+                margin-top: 10%;
             }
         }
-    }
 }
