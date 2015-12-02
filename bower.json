@@ -4,5 +4,6 @@
     "foundation": "zurb/bower-foundation",
     "fontawesome": "~4.4.0",
     "jquery": "~2.1.4"
-  }
+  },
+  "devDependencies": {}
 }

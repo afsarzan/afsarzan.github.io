@@ -20,6 +20,7 @@ $(function() {
 
 var selector = '.text-right  a';
 
+
 $(window).scroll(function(){
   onScroll(event,selector);
     if($(window).scrollTop()>=30) $('header').addClass('fixed-top');

@@ -132,7 +132,7 @@ img {
             &--desc{
                 position: absolute;
                 top: 30%;
-                text-align: center;
+                text-align: center;                
             }
         }
           
@@ -143,8 +143,11 @@ img {
                 text-transform: uppercase;
         }
         span{
-                font-size: 20px;
-                line-height: 30px
+               font-size: 20px;
+                font-weight: bold;
+                font-family: 'Quicksand', sans-serif;
+                color: #212121;
+                line-height: 1.2;
         }        
     }
 }
