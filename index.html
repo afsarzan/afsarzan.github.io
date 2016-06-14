@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html>
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
@@ -10,7 +8,7 @@
     <meta name="description" content="Developer portfolio" />
     <meta name="keywords" content="UI,UX, Developer ,Afsar Ahmed, software , engineer" />
 <!-- Meta Tags Created With: STW Meta Tag Builder http://www.scrubtheweb.com/ -->
-    
+
     <!-- <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- bower:css -->
@@ -19,17 +17,18 @@
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/app.css" />
 </head>
 
 <body>
     <div class="body-container ">
         <header>
-            <div class="row body-container__top-bar">
-                <div class="medium-3 columns">
+            <div class="row body-container__top-bar animatedParent">
+                <div class="medium-5 small-12 columns animated fadeInLeft">
                     <b class="profes">A Full Stack Developer</b>
                 </div>
-                <div class="medium-9 columns">
+                <div class="medium-7 small-12 columns animated fadeInRight">
                     <nav class="text-right ">
                         <a href="#aboutMe">About Me</a>
                         <a href="#skills">Skills</a>
@@ -41,15 +40,14 @@
         </header>
         <section class="body-container__bio">
             <div class="row">
-                <div class="columns medium-12 body-container__bio--desig">
-                   <div class="body-container__bio--desig--desc">
-                      <h1>Afsar Ahmed</h1>
-                    <br><span>A mostly self-educated techwiz from India who specializes in Front-end development. I love to play around with modern web technologies.</span>
+                <div class="columns medium-12 body-container__bio--desig animatedParent">
+                   <div class="body-container__bio--desig--desc animated growIn  delay-250">
+                      <h1>Afsar Ahmed</h1><span>Inspired by challenges , Driven by passion</span>
                    </div>
                 </div>
             </div>
         </section>
-        <section class="body-container__services text-center">
+<!--         <section class="body-container__services text-center">
             <div class="row">
                 <div class="medium-4 columns body-container__services--list">
                     <i class="fa fa-chrome  fa-3x"></i>
@@ -64,58 +62,57 @@
                     <h4><b>Database</b></h4>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section class="about-me" id="aboutMe">
             <div class="row about-me__width">
-                <div class="medium-7 columns about-me__text">
-                    <h3>Hi! I’m <span>Afsar</span></h3>
-                    <p> I have graduated with a Bachelor's in Computer Science from Jawaharlal Nehru Technological University, India. Over the past 3 years, I have been working on both front end and backend technologies, expanding my horizons in each. As a Back end developer, I have a passion for developing dynamic and secure applications. As a Front end developer create solutions that are meaningful to “users”.
+                <div class="medium-7 small-12 columns about-me__text  animatedParent">
+                    <h3 class='animated bounceIn'>Hi! I’m <span>Afsar</span></h3>
+                    <p class='animated bounceInLeft'> I have graduated with a Bachelor's in Computer Science Engineering from Jawaharlal Nehru Technological University, India. Over the past 6 years, I have been working on both front end and backend technologies, expanding my horizons in each. As a Back end developer, I have a passion for developing dynamic and secure applications. As a Front end developer creating solutions that are meaningful to “users”.
                     </p>
-                    <p>Apart from being a techie geek, you'll also find me either on biking or in the gym.</p>
-                  
+                    <p class='animated bounceInLeft'>Apart from being a techie geek, you'll also find me either on biking or in the gym.</p>
                   <br/>
                   <h3>Experience</h3>
-                    <ul class="zeducation">
-                      <li class="row">
+                    <ul class="zeducation animatedParent" data-sequence='3000'>
+                      <li class="row animated fadeInUp" data-id='1'>
                           <div class="medium-9 columns">
-                              <p class="job">Software Engineer<span> Tekzenit</span></p>
-                              <p class="loc">Hyd -Ind</p>
+                              <p class="job">Software Engineer -<span> Tekzenit</span></p>
+                              <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
                               <span class="year">2014 - today</span>
                           </div>
                       </li>
-                      <li class="row">
+                      <li class="row animated fadeInUp" data-id='2'>
                           <div class="medium-9 columns">
-                              <p class="job">Software Developer<span> Dataroutes  (Startup)</span> </p>
-                              <p class="loc">Hyd -Ind</p>
+                              <p class="job">Software Developer -<span> Dataroutes  (Startup)</span> </p>
+                              <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2013 - 2014</span>
+                              <span class="year">2014 (10 months)</span>
                           </div>
                       </li>
-                      <li class="row">
+                      <li class="row animated fadeInUp" data-id='3'>
                           <div class="medium-9 columns">
                               <p class="job">PHP Developer  -<span> Stratageeks (Startup)</span></p>
-                              <p class="loc">Hyd -Ind</p>
+                              <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
                               <span class="year">2012 - 2014</span>
                           </div>
                       </li>
-                      <li class="row">
+                      <li class="row animated fadeInUp" data-id='4'>
                           <div class="medium-9 columns">
                               <p class="job">Freelancing -<span> </span></p>
                               <p class="loc">International</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2008 - 2014</span>
+                              <span class="year">2008 - 2016</span>
                           </div>
                       </li>
                   </ul>
 
                 </div>
-                <div class="medium-5 columns about-me__img" data-animate-scroll="{ " x ": "200 ", "alpha ": "0 ", "easingType ": "Cubic.easeOut ", "force3D ": true, "duration ": "1 " }">
+                <div class="medium-5 small-12 columns about-me__img show-for-medium-up">
                     <img src="img/zan.png" alt="Afsar Ahmed" class="th">
                 </div>
             </div>
@@ -135,7 +132,7 @@
                                     <span>&#9734;</span>
                                     <span>&#9734;</span>
                                 </div>
-                                <h5>Exp: 4 years</h4>                       
+                                <h5>Exp: 4 years</h4>
                             </div>
                         </li>
                         <li>
@@ -145,9 +142,9 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>       
-                              <h5>Exp: 4 years</h4>                        
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 4 years</h4>
                             </div>
                         </li>
                         <li>
@@ -157,12 +154,12 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>   
-                                <span>&#9734;</span>                                
-                              </div>    
-                              <h5>Exp: 4 years</h4>                           
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 4 years</h4>
                             </div>
-                        </li>                        
+                        </li>
                         <li>
                             <img src="img/logo/php.svg" alt="logo PHP">
                             <div class="skills-lists">
@@ -170,12 +167,12 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                                <span>&#9734;</span>                                
-                              </div>     
-                              <h5>Exp: 4 years</h4>                          
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 4 years</h4>
                             </div>
-                        </li>                        
+                        </li>
                         <li>
                             <img src="img/logo/photoshop.svg" alt="logo photoshop">
                             <div class="skills-lists">
@@ -183,11 +180,11 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>     
-                              <h5>Exp: 3 years</h4>                          
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 3 years</h4>
                             </div>
-                        </li> 
+                        </li>
                         <li>
                             <img src="img/logo/foundation.svg" alt="logo foundation 5">
                             <div class="skills-lists">
@@ -196,9 +193,9 @@
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                    
-                              </div>     
-                              <h5>Exp: 2 years</h4>                          
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 2 years</h4>
                             </div>
                         </li>
                         <li>
@@ -208,9 +205,9 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>    
-                               <h5>Exp: 1 years</h4>                            
+                                <span>&#9734;</span>
+                              </div>
+                               <h5>Exp: 1 years</h4>
                             </div>
                         </li>
                         <li>
@@ -220,11 +217,11 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>    
-                              <h5>Exp: 2 years</h4>                           
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 2 years</h4>
                             </div>
-                        </li>                       
+                        </li>
                         <li>
                             <img src="img/logo/bootstrap.svg" alt="logo bootstrap">
                             <div class="skills-lists">
@@ -232,12 +229,12 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                                <span>&#9734;</span>                                
-                              </div>     
-                              <h5>Exp: 2 years</h4>                          
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 2 years</h4>
                             </div>
-                        </li>                       
+                        </li>
                         <li>
                             <img src="img/logo/mysql-dolphin.svg" alt="logo MYSQL">
                             <div class="skills-lists">
@@ -245,10 +242,10 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                                <span>&#9734;</span>                                
-                              </div>    
-                              <h5>Exp: 3 years</h4>                           
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 3 years</h4>
                             </div>
                         </li>
                           <li>
@@ -258,10 +255,10 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                                <span>&#9734;</span>                                
-                              </div>    
-                              <h5>Exp: 2 years</h4>                           
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 2 years</h4>
                             </div>
                         </li>
                          <li>
@@ -271,9 +268,9 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                              </div>    
-                              <h5>Exp: 3 years</h4>                           
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 3 years</h4>
                             </div>
                         </li>
                             <li>
@@ -283,9 +280,9 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                              </div>    
-                              <h5>Exp: 3 years</h4>                           
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 3 years</h4>
                             </div>
                         </li>
                         <li>
@@ -295,9 +292,9 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>      
-                              <h5>Exp: 1 years</h4>                         
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 1 years</h4>
                             </div>
                         </li>
                         <li>
@@ -307,20 +304,20 @@
                               <div class="rating">
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
-                                <span>&#9734;</span>                                
-                              </div>     
-                              <h5>Exp: 1 years</h4>                          
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 1 years</h4>
                             </div>
-                        </li>                      
+                        </li>
                         <li>
                             <img src="img/logo/angularjs.svg" alt="logo Angularjs">
                             <div class="skills-lists">
                               <h4>AngularJS:</h4>
                               <div class="rating">
                                 <span>&#9734;</span>
-                                <span>&#9734;</span> 
-                              </div>              
-                              <h5>Exp: 0.9 years</h4>                  
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 0.9 years</h4>
                             </div>
                         </li>
                     </ul>
@@ -330,8 +327,8 @@
         </section>
 
         <section class="portfolio" id="portfolio">
-            <div class="row portfolio__width">
-                <div class="medium-7 columns portfolio__text">
+            <div class="row portfolio__width animatedParent">
+                <div class="medium-7 columns portfolio__text animated bounceInDown">
                      <h3 style="margin-top: 80%;">Coming soon...</h3>
                 </div>
             </div>
@@ -373,20 +370,20 @@
                               <strong>I'm also on Social Networks</strong>
                             </div>
                               <div>
-                                <a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                                <a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>                                
-                                <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus"></i></a>
-                                <a href="https://linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://www.facebook.com/afsar.zan" target="_blank"><i class="fa fa-facebook"></i></a>
+                                <a href="http://twitter.com/afsar_zan?s=09" target="_blank"><i class="fa fa-twitter"></i></a>
+                                <a href="http://stackoverflow.com/users/1935052/zan" target="_blank"><i class="fa fa-stack-overflow"></i></a>
+                                <a href="https://in.linkedin.com/in/afsarahmed" target="_blank"><i class="fa fa-linkedin"></i></a>
                               </div>
                             </div>
                       </div>
                     </div>
                 </div>
-               
+
             </div>
         </section>
     </div>
-    
+
     <!-- bower:js -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -394,7 +391,7 @@
     <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
     <script src="bower_components/jquery-placeholder/jquery.placeholder.js"></script>
     <script src="bower_components/foundation/js/foundation.js"></script>
-    <script src="bower_components/greensock-js/src/minified/TweenMax.min.js"></script>
+    <script src="js/css3-animate-it.js"></script>
     <!-- endbower -->
     <script src="js/app.js"></script>
 </body>

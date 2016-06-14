@@ -1,5 +1,5 @@
     .about-me {
-        background-color:$trquish;
+        background-color:$light-grey;
             margin-bottom: 50px;
             height: calc(100vh);
                 padding-top: 4%;
@@ -11,15 +11,15 @@
             h3 {
                 font-weight: lighter;
                 font-size: 25px;
-                color: #f8f8f8;
-                border-bottom: 4px solid #3C3A3A;
+                color: #3C3A3A;
+                border-bottom: 4px solid $dark-maroon;
                 display: inline-block;
                 padding-bottom: 5px;
             }
             p {
                 line-height: 1.8;
                 font-size: 16px;
-                color: #f8f8f8;
+                color: #3C3A3A;
                 margin-bottom: 10px;
             }
 
@@ -50,5 +50,5 @@
 
 .portfolio{
       height: calc(100vh);
-      background-color:#f8f8f8;
+      background-color:#3C3A3A;
 }

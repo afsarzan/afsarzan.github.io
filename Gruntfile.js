@@ -19,7 +19,22 @@ module.exports = function(grunt) {
         target: {
           src: 'index.html' // point to your HTML file.
         }
-      }
+      },
+       browserSync: {
+            dev: {
+                bsFiles: {
+                    src : [
+                        'css/app.css',
+                        '*.html'
+                    ]
+                },
+                options: {
+                    watchTask: true,
+                    server: 'http://localhost:8081/profile/'
+                }
+            }
+        }
+
     },
 
     watch: {
@@ -40,9 +55,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-font-awesome-vars');
-  
+  grunt.loadNpmTasks('grunt-browser-sync');
   grunt.registerTask('build', ['sass']);
-  grunt.registerTask('default', ['build','watch']);
+  grunt.registerTask('default', ['build','watch','browserSync']);
    grunt.loadNpmTasks('grunt-wiredep');
 
 }

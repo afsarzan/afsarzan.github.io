@@ -7,6 +7,7 @@
   },
   "devDependencies": {
     "grunt": "~0.4.5",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "~0.6.1",
     "grunt-font-awesome-vars": "^1.0.1",
     "grunt-sass": "~0.18.0",

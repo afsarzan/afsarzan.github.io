@@ -43,23 +43,36 @@ img {
     cursor:pointer;
 }
 .body-container {
-    background: #f8f8f8;
+    background-image:url('../img/cube-pattern.png');
+    background-color: $dark-maroon;
+
+    .fixed-top {
+        .body-container__top-bar{
+            .profes{    color: #000;transition:color 1s;}
+                nav {
+                    a {
+                        color: #000;transition:color 1s;
+                    }
+                }
+            }
+        }
     &__top-bar {
         padding-top: 40px;
             max-width: 96%;
         b {
-            font-size: rem-calc(28px);            
-            color: #0C0A0A;                        
-            float:right;
+            font-size: rem-calc(28px);
+            color: $light-grey;
         }
+
+
         nav {
             a {
-                color: #2F2F2F;
-                margin-right: 50px;
+                color: $light-grey;
+                margin-right: 10px;
                 position: relative;
                 font-size: rem-calc(12px);
                 height: 16px;
-                letter-spacing: 5px;
+                letter-spacing: 2px;
                 line-height: 16.8px;
                 &:last {
                     margin-right: 0;
@@ -68,9 +81,9 @@ img {
                 .navmenu, &.active:before {
                     left: -10px;
                     right: -10px;
-                    background-color: $trquish;
+                    background-color: $dark-maroon;
                 }
-                
+
                     &:before {
                     position: absolute;
                     left: 50%;
@@ -88,8 +101,8 @@ img {
         }
     }
             &__services {
-                // margin-bottom:80px; 
-                background-color:rgb(251, 251, 251);
+                // margin-bottom:80px;
+                // background-color:rgb(251, 251, 251);
              &--list  {
                 padding-top: 70px;
                 i{
@@ -97,29 +110,29 @@ img {
                  width: 100%;
                   color: #3C3A3A;
                    padding: 24px 0 10px 0;
-                 &:before {                     
+                 &:before {
                      padding: 5px;
                      border-radius: 5px;
                      text-align: center;
-                 }  
+                 }
                  &:hover{
-                    color: $trquish;   
+                    color: $dark-maroon;
                     transition: .9s;
                  }
                 }
-                
+
                  h4{
                         margin: 10px 0;
                         color: #3C3A3A;
                         font-size: 16px;
-                        margin-bottom: 70px;                      
+                        margin-bottom: 70px;
 
                  }
                  &:hover {
                             background: none repeat scroll 0 0 #e7e7e7;
                             transition: .9s;
                             &.body-container__services--list h4,&.body-container__services--list i{
-                                color: $trquish;   
+                                color: $dark-maroon;
                                 transition: .9s;
                             }
                         }
@@ -128,27 +141,30 @@ img {
 
     &__bio {
         &--desig{
-            height: calc(100vh - 338px);
+            height: calc(100vh - 82px);
             &--desc{
                 position: absolute;
-                top: 30%;
-                text-align: center;                
+                top: 32%;
+                text-align: center;
+                display: block;
+                width: 100%;
             }
         }
-          
+
         h1 {
-            font-size: rem-calc(48px);
-                color: $trquish;                         
+                 font-size: rem-calc(80px);
+                color: #fff;
                 font-family: 'Montserrat';
-                text-transform: uppercase;
+                text-transform: capitalize;
+                letter-spacing: 6px;
         }
         span{
                font-size: 20px;
                 font-weight: bold;
                 font-family: 'Quicksand', sans-serif;
-                color: #212121;
+                color: #E2D2D2;
                 line-height: 1.2;
-        }        
+        }
     }
 }
 .text-center {
@@ -161,9 +177,9 @@ header.fixed-top {
     -webkit-transform: translateZ(0);
     -webkit-transform: translate3d(0, 0, 0);
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 10;
-    transition: all .5s;    
+    transition: all .5s;
     box-shadow: 0px -7px 40px rgba(180,180,180,0.2);
     .body-container__top-bar {
         padding-top: 0;

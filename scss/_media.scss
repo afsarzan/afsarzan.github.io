@@ -1,0 +1,101 @@
+@media (min-width:300px) and  (max-width:768px){
+	.body-container{
+		overflow: hidden;
+		.fixed-top{
+			position: fixed;
+		     top: 0;
+		     left: 0;
+		     width: calc(100vw);
+		     height: 100px;
+		     .body-container__top-bar>div:first-child {
+		     	margin-bottom: 0;
+		     }
+		}
+		&__top-bar{
+			padding-top: 10px;
+			>div{
+				text-align: center;
+				&:first-child{
+					    margin-bottom: 14px;
+				}
+			}
+			nav{
+				    display: flex;
+				    a{
+				    	border-right: 2px solid #fff;
+					    margin: 0px 5px;
+					    text-align: center;
+					    letter-spacing: 0px;
+					    flex-grow: 1;
+				    	&:first-child{
+				    		margin-left: 0;
+				    	}
+				    	&:last-child{
+				    		margin-right: 0;
+				    		border-right: 0;
+				    	}
+				    }
+			}
+		}
+		.profes{
+			font-size: 24px;
+			float:none;
+		}
+		&__bio{
+
+			&--desig{
+				&--desc{
+					top: calc(50% - 130px);
+					left: calc((100vw - 280px)/2);
+					width: 280px;
+				h1{
+						    font-size: 32px;
+					}
+					span{
+						font-size: 14px;
+					}
+				}
+			}
+		}
+		.about-me{
+			height: auto;
+			padding-top: 100px;
+			&__width{
+				max-width: 98%;
+				margin: 0 auto;
+			}
+		}
+		.skills{
+			height: auto;
+			padding-top: 100px;
+			clear: both;
+			padding-top: 97px;
+			>h1{
+				font-size: 18px;
+    			line-height: 2;
+			}
+		}
+		.portfolio {
+		    height: calc(100vh);
+		    padding-top: 100px;
+		    margin-top: 10px;
+		}
+		.contact-me{
+			height: auto;
+			padding-top: 100px;
+			margin-top: 10px;
+			&__width{
+				max-width: 98%;
+			}
+			&__address{
+				&--text{
+					text-align: center;
+				}
+				&--social{
+					margin-top: 20px;
+					text-align: center;
+				}
+			}
+		}
+	}
+}
