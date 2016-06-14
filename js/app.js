@@ -83,7 +83,7 @@ $(function() {
 });
 var selector = '.text-right  a';
 $(window).scroll(function() {
-    onScroll(event, selector);
+    // window.onScroll(event, selector);
     if ($(window).scrollTop() >= 30) $('header').addClass('fixed-top');
     else $('header').removeClass('fixed-top');
 });
