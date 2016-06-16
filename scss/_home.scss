@@ -72,13 +72,12 @@ img {
         nav {
             a {
                 color: $light-grey;
-                margin-right: 10px;
+                margin-right: 40px;
                 position: relative;
                 font-size: rem-calc(12px);
                 height: 16px;
                 letter-spacing: 2px;
                 line-height: 16.8px;
-                margin-right: 40px;
                 &:last {
                     margin-right: 0;
                 }
