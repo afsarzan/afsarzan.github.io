@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Muli:400,300italic,300' rel='stylesheet' type='text/css'>
     <script src="bower_components/modernizr/modernizr.js"></script>
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/app.css" />
@@ -63,22 +64,22 @@
             </div>
         </section> -->
         <section class="about-me" id="aboutMe">
-            <div class="row about-me__width">
-                <div class="medium-7 small-12 columns about-me__text  animatedParent">
-                    <h3 class='animated bounceIn'>Hi! I’m <span>Afsar</span></h3>
+            <div class="row about-me__width about-me__text" data-equalizer>
+                <div class="medium-6 small-12 columns  about-me__text--white animatedParent" data-equalizer-watch>
+                    <h3 class='animated bounceIn'>Me!</h3>
                     <p class='animated bounceInLeft'> I have graduated with a Bachelor's in Computer Science Engineering from Jawaharlal Nehru Technological University, India. Over the past 6 years, I have been working on both front end and backend technologies, expanding my horizons in each. As a Back end developer, I have a passion for developing dynamic and secure applications. As a Front end developer creating solutions that are meaningful to “users”.
                     </p>
                     <p class='animated bounceInLeft'>Apart from being a techie geek, you'll also find me either on biking or in the gym.</p>
                   <br/>
                   <h3>Experience</h3>
-                    <ul class="zeducation animatedParent" data-sequence='3000'>
+                    <ul class="zeducation animatedParent" data-sequence='5000'>
                       <li class="row animated fadeInUp" data-id='1'>
                           <div class="medium-9 columns">
                               <p class="job">Software Engineer -<span> Tekzenit</span></p>
                               <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2014 - today</span>
+                              <p class="year">2014 - today</p>
                           </div>
                       </li>
                       <li class="row animated fadeInUp" data-id='2'>
@@ -87,7 +88,7 @@
                               <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2014 (10 months)</span>
+                              <p class="year">2014 (10 months)</p>
                           </div>
                       </li>
                       <li class="row animated fadeInUp" data-id='3'>
@@ -96,7 +97,7 @@
                               <p class="loc">Hyd - India</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2012 - 2014</span>
+                              <p class="year">2012 - 2014</p>
                           </div>
                       </li>
                       <li class="row animated fadeInUp" data-id='4'>
@@ -105,19 +106,73 @@
                               <p class="loc">International</p>
                           </div>
                           <div class="medium-3 columns">
-                              <span class="year">2008 - 2016</span>
+                              <p class="year">2008 - 2016</p>
                           </div>
                       </li>
                   </ul>
 
                 </div>
-                <div class="medium-5 small-12 columns about-me__img show-for-medium-up">
-                    <img src="img/zan.png" alt="Afsar Ahmed" class="th">
+                <div class="medium-6 small-12 columns about-me__responsi" data-equalizer-watch>
+                   <h3>Responsibilities</h3>
+                    <ul class="responsibilities animatedParent" data-sequence='300'>
+                      <li class="row animated fadeInUp" data-id='1'>
+                          <div class="medium-12 columns">
+                              <p class="job">I am responsible for developing  and managing responsive web applications and mobile solutions for various projects</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='2'>
+                          <div class="medium-12 columns">
+                              <p class="job">Working alongside the product management and UX lead to help define realistic requirements</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='3'>
+                          <div class="medium-12 columns">
+                              <p class="job">Working alongside other teams to deliver a coherent front-end, this will involve pushing forwards API and schema changes </p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='4'>
+                          <div class="medium-12 columns">
+                              <p class="job">Styling visually appealing web pages or interfaces using HTML, CSS and JavaScript.</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='5'>
+                          <div class="medium-12 columns">
+                              <p class="job">Creating, editing or modifying templates for a CMS and for web frameworks.</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='6'>
+                          <div class="medium-12 columns">
+                              <p class="job">Programming interaction with JavaScript and/or a library such as jQuery, ExtJs, AngularJS.</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='7'>
+                          <div class="medium-12 columns">
+                              <p class="job">Mentoring and training other developers as necessary</p>
+                          </div>
+                      </li>
+
+                      <li class="row animated fadeInUp" data-id='8'>
+                          <div class="medium-12 columns">
+                              <p class="job">Keeping up to date with current front end technology trends</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='9'>
+                          <div class="medium-12 columns">
+                              <p class="job">Testing cross-browser, cross-platform, and/or cross-device compatibility for inconsistencies</p>
+                          </div>
+                      </li>
+                      <li class="row animated fadeInUp" data-id='10'>
+                          <div class="medium-12 columns">
+                              <p class="job">I have also helped in providing estimates for tasks, following technology best practices, participate in Technical task grooming process, performance metrics/scalability, and Smoke testing and handling post production issues</p>
+                          </div>
+                      </li>
+                  </ul>
+                  <p class="download"><a target="_blank" href="afsar_ahmed.pdf">Download my resume</a></p>
                 </div>
             </div>
         </section>
         <section class="skills" id="skills">
-            <h1>Skills that define me</h1>
+            <h1>Skills set</h1>
             <div class="row full-width">
                 <div class="medium-12 columns">
                     <ul class="small-block-grid-3 medium-block-grid-6 large-block-grid-6">
@@ -206,7 +261,7 @@
                                 <span>&#9734;</span>
                                 <span>&#9734;</span>
                               </div>
-                               <h5>Exp: 1 years</h4>
+                               <h5>Exp: 1.8 years</h4>
                             </div>
                         </li>
                         <li>
@@ -318,9 +373,31 @@
                               </div>
                               <h5>Exp: 1.8 years</h4>
                             </div>
+                        </li>                    
+                        <li>
+                            <img src="img/logo/modernizr.svg" alt="logo Modernizr">
+                            <div class="skills-lists">
+                              <h4>Modernizr:</h4>
+                              <div class="rating">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 1 years</h4>
+                            </div>
                         </li>
-                    </ul>
 
+                        <li>
+                            <img src="img/logo/gulp.png" alt="logo Gulp" class="gulp">
+                            <div class="skills-lists">
+                              <h4>Gulp:</h4>
+                              <div class="rating">
+                                <span>&#9734;</span>
+                                <span>&#9734;</span>
+                              </div>
+                              <h5>Exp: 1 years</h4>
+                            </div>
+                        </li>
+                      </ul>
                 </div>
             </div>
         </section>
