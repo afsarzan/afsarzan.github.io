@@ -21,7 +21,7 @@ body {
     color: #666;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto Slab', sans-serif;
     font-weight: normal;
     font-style: normal;
     line-height: 1.5;
@@ -43,8 +43,12 @@ img {
     cursor:pointer;
 }
 .body-container {
-    background-image:url('../img/cube-pattern.png');
-    background-color: $dark-maroon;
+
+
+    background: -webkit-linear-gradient(right, rgba(100,65,165,0.7), rgba(42, 8, 69, 0.7)), url('../img/cube-pattern.png');
+    background: -o-linear-gradient(right, rgba(100,65,165,0.7), rgba(42, 8, 69, 0.7)), url('../img/cube-pattern.png');
+    background: linear-gradient(to left, rgba(100,65,165,0.7), rgba(42, 8, 69, 0.7)), url('../img/cube-pattern.png');
+
 
     .fixed-top {
         .body-container__top-bar{
@@ -81,7 +85,7 @@ img {
                 .navmenu, &.active:before {
                     left: -10px;
                     right: -10px;
-                    background-color: $dark-maroon;
+                    background-color: $purple;
                 }
 
                     &:before {
@@ -116,7 +120,7 @@ img {
                      text-align: center;
                  }
                  &:hover{
-                    color: $dark-maroon;
+                    color: $purple;
                     transition: .9s;
                  }
                 }
@@ -132,7 +136,7 @@ img {
                             background: none repeat scroll 0 0 #e7e7e7;
                             transition: .9s;
                             &.body-container__services--list h4,&.body-container__services--list i{
-                                color: $dark-maroon;
+                                color: $purple;
                                 transition: .9s;
                             }
                         }
@@ -154,7 +158,7 @@ img {
         h1 {
                  font-size: rem-calc(80px);
                 color: #fff;
-                font-family: 'Montserrat';
+                font-family: 'Roboto Slab';
                 text-transform: capitalize;
                 letter-spacing: 6px;
         }
@@ -162,7 +166,7 @@ img {
                font-size: 20px;
                 font-weight: bold;
                 font-family: 'Quicksand', sans-serif;
-                color: #E2D2D2;
+                color: #c8d5ff;
                 line-height: 1.2;
         }
     }

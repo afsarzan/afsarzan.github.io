@@ -14,7 +14,7 @@ $(function() {
         }
     });
 
-//     // ------------- VARIABLES ------------- //
+    // ------------- VARIABLES ------------- //
 // var ticking = false;
 // var isFirefox = (/Firefox/i.test(navigator.userAgent));
 // var isIe = (/MSIE/i.test(navigator.userAgent)) || (/Trident.*rv\:11\./i.test(navigator.userAgent));
@@ -23,47 +23,47 @@ $(function() {
 // var currentSlideNumber = 0;
 // var totalSlideNumber = $(".background").length;
 
-// // // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
-// // function parallaxScroll(evt) {
-// //   if (isFirefox) {
-// //     //Set delta for Firefox
-// //     delta = evt.detail * (-120);
-// //   } else if (isIe) {
-// //     //Set delta for IE
-// //     delta = -evt.deltaY;
-// //   } else {
-// //     //Set delta for all other browsers
-// //     delta = evt.wheelDelta;
-// //   }
+// // ------------- DETERMINE DELTA/SCROLL DIRECTION ------------- //
+// function parallaxScroll(evt) {
+//   if (isFirefox) {
+//     //Set delta for Firefox
+//     delta = evt.detail * (-120);
+//   } else if (isIe) {
+//     //Set delta for IE
+//     delta = -evt.deltaY;
+//   } else {
+//     //Set delta for all other browsers
+//     delta = evt.wheelDelta;
+//   }
 
-// //   if (ticking != true) {
-// //     if (delta <= -scrollSensitivitySetting) {
-// //       //Down scroll
-// //       ticking = true;
-// //       if (currentSlideNumber !== totalSlideNumber - 1) {
-// //         currentSlideNumber++;
-// //         nextItem();
-// //       }
-// //       slideDurationTimeout(slideDurationSetting);
-// //     }
-// //     if (delta >= scrollSensitivitySetting) {
-// //       //Up scroll
-// //       ticking = true;
-// //       if (currentSlideNumber !== 0) {
-// //         currentSlideNumber--;
-// //       }
-// //       previousItem();
-// //       slideDurationTimeout(slideDurationSetting);
-// //     }
-// //   }
-// // }
+//   if (ticking != true) {
+//     if (delta <= -scrollSensitivitySetting) {
+//       //Down scroll
+//       ticking = true;
+//       if (currentSlideNumber !== totalSlideNumber - 1) {
+//         currentSlideNumber++;
+//         nextItem();
+//       }
+//       slideDurationTimeout(slideDurationSetting);
+//     }
+//     if (delta >= scrollSensitivitySetting) {
+//       //Up scroll
+//       ticking = true;
+//       if (currentSlideNumber !== 0) {
+//         currentSlideNumber--;
+//       }
+//       previousItem();
+//       slideDurationTimeout(slideDurationSetting);
+//     }
+//   }
+// }
 
-// // // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
-// // function slideDurationTimeout(slideDuration) {
-// //   setTimeout(function() {
-// //     ticking = false;
-// //   }, slideDuration);
-// // }
+// // ------------- SET TIMEOUT TO TEMPORARILY "LOCK" SLIDES ------------- //
+// function slideDurationTimeout(slideDuration) {
+//   setTimeout(function() {
+//     ticking = false;
+//   }, slideDuration);
+// }
 
 // // ------------- ADD EVENT LISTENER ------------- //
 // var mousewheelEvent = isFirefox ? "DOMMouseScroll" : "wheel";
@@ -83,7 +83,7 @@ $(function() {
 });
 var selector = '.text-right  a';
 $(window).scroll(function() {
-    // window.onScroll(event, selector);
+    onScrollt(selector);
     if ($(window).scrollTop() >= 30) $('header').addClass('fixed-top');
     else $('header').removeClass('fixed-top');
 });
@@ -91,12 +91,13 @@ $(selector).on('click', function() {
     $(selector).removeClass('active');
     $(this).addClass('active');
 });
-function onScroll(event, selector) {
+function onScrollt(selector) {
     var scrollPos = $(document).scrollTop();
     $(selector).each(function() {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos-10) {
+        console.log("current position " + refElement.position().top + " and  scroll position " +  refElement.height());
+        if (parseInt(refElement.position().top) <= scrollPos && parseInt(refElement.position().top) + parseInt(refElement.height()) > scrollPos) {
             $(selector).removeClass("active");
             currLink.addClass("active");
         } else {
