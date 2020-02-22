@@ -16,6 +16,8 @@
   },
   "dependencies": {
     "gsap": "^1.17.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
     "wiredep": "^3.0.0-beta"
   }
 }
